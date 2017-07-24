@@ -28,6 +28,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+
 		</dependency>
 
 		<dependency>
@@ -40,12 +47,8 @@
 			<artifactId>ojdbc6</artifactId>
 			<version>11.2.0.3</version>
 			<!-- <scope>test</scope> -->
-			<!-- <exclusions>
-				<exclusion>
-					<artifactId>*</artifactId>
-					<groupId>*</groupId>
-				</exclusion>
-			</exclusions> -->
+			<!-- <exclusions> <exclusion> <artifactId>*</artifactId> <groupId>*</groupId> 
+				</exclusion> </exclusions> -->
 		</dependency>
 
 	</dependencies>
